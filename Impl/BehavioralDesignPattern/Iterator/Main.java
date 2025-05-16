@@ -5,7 +5,7 @@ public class Main {
         PersonIterator personIterator = new PersonIterator();
         personIterator.add(new Person("Nada"));
         personIterator.add(new Person("Samaa"));
-        personIterator.add(new Person("Hazem"));
+        personIterator.add(new Person("Hamza"));
         personIterator.add(new Person("Noha"));
 
 
