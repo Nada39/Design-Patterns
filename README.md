@@ -3,9 +3,9 @@
 This document provides an overview of common design patterns used in software development, including their explanations and examples. It is designed for students and aims to be **simple, structured, and easy to navigate**.
 
 ## 📖 Quick Navigation:
-- [1. Creational Patterns](#-creational-patterns)
-- [2. Structural Patterns](#-structural-patterns)
-- [3. Behavioral Patterns](#-behavioral-patterns)
+- [Creational Patterns](#-creational-patterns)
+- [Structural Patterns](#-structural-patterns)
+- [Behavioral Patterns](#-behavioral-patterns)
 
 ---
 
