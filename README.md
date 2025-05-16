@@ -41,6 +41,15 @@ These patterns focus on **class composition** and the structure of relationships
 - **Purpose:** Converts the **interface** of a class into another interface that clients expect.
 - **Example (E-commerce):** Adapting **third-party shipping services** into a standard format.
 
+### 🔹 Bridge
+- **Purpose:** Separates **abstraction from implementation**, allowing independent development of each.  
+- **Example (E-commerce):** If we want to implement multiple ways to present products—list view, grid view, or carousel.Instead of tightly coupling the product class with specific UI components, the Bridge pattern allows the platform to support multiple display formats while keeping the product data independent
+
+### 🔹 Composite
+- **Purpose:** Creates a **hierarchical structure** where individual objects and compositions are treated uniformly(Tree stucture).  
+- **Example1 (E-commerce):** Organizing products into categories and subcategories—such as "Electronics > Smartphones > Accessories"—where each level behaves consistently.
+- **Example2 :** Organizing folders and files.
+
 ### 🔹 Decorator
 - **Purpose:** **Adds new behaviors** to objects dynamically.
 - **Example (E-commerce):** Adding **discounts** dynamically to a product.
@@ -49,17 +58,9 @@ These patterns focus on **class composition** and the structure of relationships
 - **Purpose:** Controls access to an object, adding security or caching mechanisms.  
 - **Example (E-commerce):** Restricting certain premium features, like advanced product recommendations, to logged-in users while providing basic suggestions to guests.
 
-### 🔹 Composite
-- **Purpose:** Creates a hierarchical structure where individual objects and compositions are treated uniformly.  
-- **Example (E-commerce):** Organizing products into categories and subcategories—such as "Electronics > Smartphones > Accessories"—where each level behaves consistently.
-
 ### 🔹 Facade
 - **Purpose:** Provides a simplified interface to complex subsystems, improving ease of use.
 - **Example (E-commerce):** A unified checkout process that manages payment processing, inventory updates, and shipping arrangements behind the scenes, so users only interact with a single "Complete Purchase" button.
-
-### 🔹 Bridge
-- **Purpose:** Separates abstraction from implementation, allowing independent development of each.  
-- **Example (E-commerce):** Implementing multiple payment methods—such as credit cards, PayPal, and digital wallets—without tightly coupling them to the core payment processing system.
 
 ---
 
