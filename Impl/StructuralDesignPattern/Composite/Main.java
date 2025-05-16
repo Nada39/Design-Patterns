@@ -1,12 +1,18 @@
 package StructuralDesignPattern.Composite;
 
-/*
- *      
- *      
+/*                                  mainContainer
+ *        rectangle1(l)     square1(c)        square2(c)      square3(c)
  *     
- *     
+ *                      line1(l)  line4(l)                     line5(l)
  */
 
+ 
+// SOLID principles:
+// Liskov Substitution: Treats both individual Graphic and Graphic categories uniformly.
+// Open/Closed: Enables new hierarchical structures without modifying existing code.
+
+
+// harder to restrict the components of a composite 
 public class Main {
    public static void main(String[] args) {
     
@@ -49,6 +55,9 @@ public class Main {
     mainContainer.add(container1);
     mainContainer.add(container2);
     mainContainer.add(container3);
+
+    // it will print the mainContiner -> we should check if it a container print it ....(recursion)
+    mainContainer.printChildren();
 
    } 
     
