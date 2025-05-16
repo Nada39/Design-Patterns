@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class Container implements Graphic{
     String name = "Container";
-    Vector<Graphic> children; 
+    Vector<Graphic> children = new Vector<>(); 
 
 
     @Override
@@ -19,7 +19,7 @@ public class Container implements Graphic{
     
     void printChildren()
     {
-        children.forEach(child -> getName());
+        children.forEach(child -> System.out.println(child.getName()));
     }
     
 }

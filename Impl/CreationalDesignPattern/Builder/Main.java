@@ -1,5 +1,11 @@
 package Builder;
 
+// SOLID principles
+// Single resposibility: Separates construction logic from object representation
+// Open/Closed: Allows additional configurations without modifying existing builders
+// Dependency Inversion: provide interfaces
+
+
 public class Main {
     public static void main(String[] args) {
         
