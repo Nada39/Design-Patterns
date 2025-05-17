@@ -51,17 +51,21 @@ These patterns focus on **class composition** and the structure of relationships
 - **Example2 :** Organizing folders and files.
 
 ### 🔹 Decorator
-- **Purpose:** **Adds new behaviors** to objects dynamically.
-- **Example (E-commerce):** Adding **discounts** dynamically to a product.
+- **Purpose:** Allows us to **add new functionality** to an object without modifying its existing structure.
+- **Example (E-commerce):** Adding **discounts** dynamically to a product.(allow to add or remove it)
 
+### 🔹 Facade
+- **Purpose:** Provides a **simplified interface** to **complex subsystems**, improving ease of use.
+- **Example (E-commerce):** A unified checkout process that manages payment processing, inventory updates, and shipping arrangements behind the scenes, so users only interact with a single **"Complete Purchase"** button.
+
+### 🔹 Flyweight
+- **Purpose:** Used to **optimize memory usage** by sharing common objects instead of **creating multiple instances** of the same data.
+- **Example (E-commerce):** If products have same attributes(Size, Color) instead of creating a separate object for every product we can reuse a shared "ProductTemplate" object that contains common attributes  
+    
 ### 🔹 Proxy
 - **Purpose:** Controls access to an object, adding security or caching mechanisms.  
 - **Example (E-commerce):** Restricting certain premium features, like advanced product recommendations, to logged-in users while providing basic suggestions to guests.
-
-### 🔹 Facade
-- **Purpose:** Provides a simplified interface to complex subsystems, improving ease of use.
-- **Example (E-commerce):** A unified checkout process that manages payment processing, inventory updates, and shipping arrangements behind the scenes, so users only interact with a single "Complete Purchase" button.
-
+  
 ---
 
 ## 3. Behavioral Patterns 🤖
