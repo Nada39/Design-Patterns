@@ -8,7 +8,7 @@ public class PlayerFactory {
 
     public static Player getPlayer(String type)   // Factory Method --> create object if needed
     {
-        if(players.containsKey(type))
+        if(players.containsKey(type)) // if exists
         {
             return (Player)players.get(type);
         }

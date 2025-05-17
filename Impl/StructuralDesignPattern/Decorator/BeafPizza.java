@@ -15,7 +15,7 @@ public class BeafPizza extends BasicPizza{
 
     @Override
     public String Description() {
-        return pizzaComponent.Description()+ "Beaf";
+        return pizzaComponent.Description()+ " Beaf";
     }
     
 }
