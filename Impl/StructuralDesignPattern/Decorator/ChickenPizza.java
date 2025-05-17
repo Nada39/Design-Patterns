@@ -15,7 +15,9 @@ public class ChickenPizza extends BasicPizza {
 
     @Override
     public String Description() {
-        return pizzaComponent.Description() + "Chicken";
+        return pizzaComponent.Description() + " Chicken";
     }
+
+    
     
 }
