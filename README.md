@@ -1,11 +1,11 @@
 # Design Patterns Guide 📌
 
-This document provides an overview of common design patterns used in software development, including their explanations and examples. It is designed for students and aims to be **simple, structured, and easy to navigate**.
+This document provides an overview of common design patterns used in software development, including their explanations and examples.
 
 ## 📖 Quick Navigation:
-- [Creational Patterns](#-creational-patterns)
-- [Structural Patterns](#-structural-patterns)
-- [Behavioral Patterns](#-behavioral-patterns)
+- [Creational Patterns](#1-creational-patterns-%EF%B8%8F)
+- [Structural Patterns](#2-structural-patterns-)
+- [Behavioral Patterns](#3-behavioral-patterns-)
 
 ---
 
@@ -71,13 +71,53 @@ These patterns focus on **class composition** and the structure of relationships
 ## 3. Behavioral Patterns 🤖
 These patterns **define interactions** between objects.
 
+## 🔹 Chain of Responsibility
+- **Purpose:** Passes a **request** through a chain of handlers until **one processes** it.
+- **Example (E-commerce):** **Order processing pipeline**, where different validation steps occur sequentially (payment, stock check, shipment).
+
+## 🔹 Command
+- **Purpose:** Encapsulates a request as an object to allow undo/redo functionality.
+- **Example (E-commerce):** in Shopping cart actions like **adding/removing items** and **undoing changes**.
+
+## 🔹 Interpreter
+- **Purpose:** Defines a way to interpret and evaluate language grammar or expressions.
+- **Example:** **Search filters**, where users enter queries like "price < $50" and the system interprets them.
+
+## 🔹 Iterator
+- **Purpose:** Traverse element of collection without know how it stored/structured
+- **Example:** Iterates on posts of Facebook -> Post class, PostIterator
+
+## 🔹 Mediator
+- **Purpose:** Centralizes communication between objects to reduce dependencies.
+- **Example:** **Customer support system**, where a mediator routes queries to the appropriate department.
+
+## 🔹 Memento
+- **Purpose:** Captures and restores an object’s internal state without violating encapsulation.
+- **Example:** **Shopping cart recovery**, allowing users to restore their cart after accidental changes.
+
 ### 🔹 Observer
 - **Purpose:** Allows multiple objects to be notified when a **state changes**.
 - **Example (E-commerce):** **Customers subscribing** to product updates.
 
+## 🔹 Observer
+- **Purpose:** Allows multiple objects to be notified when a **state changes**.
+- **Example:** **Customers subscribing** to product updates.
+
 ### 🔹 Strategy
 - **Purpose:** Allows selecting an **algorithm dynamically**.
 - **Example (E-commerce):** Choosing different **sorting algorithms** for product recommendations.
+
+## 🔹 State
+- **Purpose:** Allows an object to change behavior when its internal state changes.
+- **Example:** **Order lifecycle**, transitioning from "Pending" to "Shipped" to "Delivered."
+
+## 🔹 State
+- **Purpose:** Allows an object to change behavior when its internal state changes.
+- **Example:** **Order lifecycle
+
+## 🔹 Template Method
+- **Purpose:** Defines a skeleton of an algorithm and allows subclasses to customize steps.
+- **Example:** **Checkout process**, where different payment methods modify only specific parts of the workflow.
 
 ---
 
