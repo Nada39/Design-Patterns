@@ -1,5 +1,11 @@
 package BehavioralDesignPattern.Observer;
 
+// SOLID principles:
+// Open/Closed: New observers can be added without modifying subjects.
+// Dependency Inversion: Observers depend on abstractions.
+
+// We could add mediator to manage the communication between observers and observable(Subject)
+
 public class Main {
     public static void main(String[] args) {
         Joker joker = new Joker();
