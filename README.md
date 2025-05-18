@@ -71,56 +71,50 @@ These patterns focus on **class composition** and the structure of relationships
 ## 3. Behavioral Patterns 🤖
 These patterns **define interactions** between objects.
 
-## 🔹 Chain of Responsibility
+### 🔹 Chain of Responsibility
 - **Purpose:** Passes a **request** through a chain of handlers until **one processes** it.
 - **Example (E-commerce):** **Order processing pipeline**, where different validation steps occur sequentially (payment, stock check, shipment).
 
-## 🔹 Command
+### 🔹 Command
 - **Purpose:** Encapsulates a request as an object to allow undo/redo functionality.
 - **Example (E-commerce):** in Shopping cart actions like **adding/removing items** and **undoing changes**.
 
-## 🔹 Interpreter
+### 🔹 Interpreter
 - **Purpose:** Defines a way to interpret and evaluate language grammar or expressions.
-- **Example:** **Search filters**, where users enter queries like "price < $50" and the system interprets them.
+- **Example (E-commerce):** **Search filters**, where users enter queries like "price < $50" and the system interprets them.
 
-## 🔹 Iterator
+### 🔹 Iterator
 - **Purpose:** Traverse element of collection without know how it stored/structured
 - **Example:** Iterates on posts of Facebook -> Post class, PostIterator
 
-## 🔹 Mediator
-- **Purpose:** Centralizes communication between objects to reduce dependencies.
-- **Example:** **Customer support system**, where a mediator routes queries to the appropriate department.
+### 🔹 Mediator
+- **Purpose:** Centralizes and manages **communication between objects** to reduce dependencies.
+- **Example (E-commerce):** Customer support system where a mediator routes queries to the appropriate department.
+- **Example:** Traffic man 
 
-## 🔹 Memento
+### 🔹 Memento
 - **Purpose:** Captures and restores an object’s internal state without violating encapsulation.
 - **Example:** **Shopping cart recovery**, allowing users to restore their cart after accidental changes.
 
 ### 🔹 Observer
 - **Purpose:** Allows multiple objects to be notified when a **state changes**.
 - **Example (E-commerce):** **Customers subscribing** to product updates.
-
-## 🔹 Observer
-- **Purpose:** Allows multiple objects to be notified when a **state changes**.
-- **Example:** **Customers subscribing** to product updates.
+ 
+### 🔹 State
+- **Purpose:** Allows an object to **change behavior** when its internal state changes (reduce if-conditions).
+- **Example (E-commerce):** Order lifecycle, transitioning from "Pending" to "Shipped" to "Delivered."
 
 ### 🔹 Strategy
-- **Purpose:** Allows selecting an **algorithm dynamically**.
-- **Example (E-commerce):** Choosing different **sorting algorithms** for product recommendations.
+- **Purpose:** Defines a family of algorithms and allows **selecting one algorithm dynamically** at runtime.
+- **Example (E-commerce):** Choosing different **sorting algorithms** for product recommendations(Price-based, Size-based).
 
-## 🔹 State
-- **Purpose:** Allows an object to change behavior when its internal state changes.
-- **Example:** **Order lifecycle**, transitioning from "Pending" to "Shipped" to "Delivered."
-
-## 🔹 State
-- **Purpose:** Allows an object to change behavior when its internal state changes.
-- **Example:** **Order lifecycle
-
-## 🔹 Template Method
-- **Purpose:** Defines a skeleton of an algorithm and allows subclasses to customize steps.
-- **Example:** **Checkout process**, where different payment methods modify only specific parts of the workflow.
+### 🔹 Template Method
+- **Purpose:** Defines a **skeleton** of an algorithm and allows subclasses to **customize steps**.
+- **Example:** Checkout process where different **payment methods** modify only specific parts of the workflow.
 
 ---
 
-## 🎯 Conclusion
-This guide presents **essential design patterns** with clear explanations and **real-world applications** in e-commerce. Bookmark the Quick Navigation for fast access.
-
+## 🎯 Resources
+- Software Design (Summery)
+- [Refactoring.GURU](https://refactoring.guru/design-patterns)
+- [DevGeeks Academy](https://youtube.com/playlist?list=PLd-dOEgzBpGnt3GuEszo_piQq52XSqAmj&si=7LA8TbIRBUe2srZG)
