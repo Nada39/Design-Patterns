@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class PersonIterator implements Iterable {
-    List persons ;
+// Iterable Interface: It allows objects to be iterated over sequentially, making it possible to use enhanced for-loops (for-each loops)
+
+public class PersonIterator implements Iterable<Person> {
+    List<Person> persons ;
 
     public PersonIterator()
     {
@@ -18,7 +20,7 @@ public class PersonIterator implements Iterable {
     }
 
     @Override
-    public Iterator iterator() {
+    public Iterator<Person> iterator() {
 
 
             return  new Iterator<Person>() {
@@ -33,7 +35,10 @@ public class PersonIterator implements Iterable {
                 public Person next() {
                     if(hasNext())
                     {
-                        return (Person) persons.get(index);
+                        Person p = persons.get(index);
+                        index++; 
+                        return p;
+
                     }
                     return null;
                 }

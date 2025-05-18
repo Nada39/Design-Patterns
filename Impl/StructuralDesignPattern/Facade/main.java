@@ -11,7 +11,7 @@ package StructuralDesignPattern.Facade;
 //A facade can become a all-knowing (references a large number of distinct types, has too many unrelated or uncategorized methods, or some combination of both)
 //object coupled to all classes of an app.
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         // from facade -> call the complex method

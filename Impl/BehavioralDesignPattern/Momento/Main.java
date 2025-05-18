@@ -1,5 +1,9 @@
 package BehavioralDesignPattern.Momento;
 
+// SOLID principles:
+// Single Responsibility: Memento only stores state.
+// Open/Closed: New state-saving logic can be added.
+
 public class Main {
     
     public static void main(String[] args) {

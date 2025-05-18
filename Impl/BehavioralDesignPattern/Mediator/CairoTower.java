@@ -3,6 +3,7 @@ package BehavioralDesignPattern.Mediator;
 import java.util.ArrayList;
 import java.util.List;
 
+// Mediator
 public class CairoTower implements AirPortTower{
 
     List<AirCraft> registeredAirCrafts = new ArrayList<>();
