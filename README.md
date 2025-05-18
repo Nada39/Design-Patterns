@@ -115,6 +115,6 @@ These patterns **define interactions** between objects.
 ---
 
 ## 🎯 Resources
-- Software Design (Summery)
+- Software Design(Summary)
 - [Refactoring.GURU](https://refactoring.guru/design-patterns)
 - [DevGeeks Academy](https://youtube.com/playlist?list=PLd-dOEgzBpGnt3GuEszo_piQq52XSqAmj&si=7LA8TbIRBUe2srZG)
