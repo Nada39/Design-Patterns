@@ -18,7 +18,8 @@ These patterns focus on **object creation mechanisms**, aiming to improve flexib
 
 ### 🔹 Factory Method
 - **Purpose:** Provides an interface to **create objects** in a superclass while allowing subclasses to alter object creation.
-- **Example (E-commerce):** A **Payment Gateway Factory** that returns different payment methods dynamically.
+- **Example1 (E-commerce):** A **Payment Gateway Factory** that returns different payment methods dynamically.
+- **Example2 (Spring Security):** A **PasswordEncoderFactories** create default types of password encoder based on predefined mapping
 
 ### 🔹 Abstract Factory
 - **Purpose:** Provides an interface for **creating families of related or dependent objects** without specifying their concrete classes.
@@ -26,7 +27,9 @@ These patterns focus on **object creation mechanisms**, aiming to improve flexib
 
 ### 🔹 Builder
 - **Purpose:** Separates the **construction of a complex object** from its representation.
-- **Example (E-commerce):** A **Product Builder** that customizes a product with different features.
+- **Example1 (E-commerce):** A **Product Builder** that customizes a product with different features.
+- **Example2 (Spring Security):** **HttpSecurity**, create security rules.
+
 
 ### 🔹 Prototype
 - **Purpose:** Allows cloning an object, reducing costly object creation.
@@ -64,7 +67,8 @@ These patterns focus on **class composition** and the structure of relationships
     
 ### 🔹 Proxy
 - **Purpose:** Controls access to an object, adding security or caching mechanisms.  
-- **Example (E-commerce):** Restricting certain premium features, like advanced product recommendations, to logged-in users while providing basic suggestions to guests.
+- **Example1 (E-commerce):** Restricting certain premium features, like advanced product recommendations, to logged-in users while providing basic suggestions to guests.
+- **Example2 (Spring Security):** **DelegatingFilterProxy**, act like bridge between the servlet container and spring's security filter chain.
   
 ---
 
@@ -73,7 +77,8 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Chain of Responsibility
 - **Purpose:** Passes a **request** through a chain of handlers until **one processes** it.
-- **Example (E-commerce):** **Order processing pipeline**, where different validation steps occur sequentially (payment, stock check, shipment).
+- **Example1 (E-commerce):** **Order processing pipeline**, where different validation steps occur sequentially (payment, stock check, shipment).
+- **Example2 (Spring Security):** **SecurityFilerChain**
 
 ### 🔹 Command
 - **Purpose:** Encapsulates a request as an object to allow undo/redo functionality.
@@ -106,7 +111,8 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Strategy
 - **Purpose:** Defines a family of algorithms and allows **selecting one algorithm dynamically** at runtime.
-- **Example (E-commerce):** Choosing different **sorting algorithms** for product recommendations(Price-based, Size-based).
+- **Example1 (E-commerce):** Choosing different **sorting algorithms** for product recommendations(Price-based, Size-based).
+- **Example2 (Spring Security):** **PasswordEncoder**
 
 ### 🔹 Template Method
 - **Purpose:** Defines a **skeleton** of an algorithm and allows subclasses to **customize steps**.
