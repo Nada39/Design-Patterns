@@ -14,12 +14,14 @@ These patterns focus on **object creation mechanisms**, aiming to improve flexib
 
 ### 🔹 Singleton
 - **Purpose:** Ensures that **only one instance** of a class is created.
-- **Example (E-commerce):** A **Cart Manager** that maintains a single instance for tracking user purchases across sessions.
+- **Example-1 (E-commerce):** A **Cart Manager** that maintains a single instance for tracking user purchases across sessions.
+- **Example-2 (Spring Core):** spring beans are singleton by default. Note: you can change it through @Scope
 
 ### 🔹 Factory Method
 - **Purpose:** Provides an interface to **create objects** in a superclass while allowing subclasses to alter object creation.
-- **Example1 (E-commerce):** A **Payment Gateway Factory** that returns different payment methods dynamically.
-- **Example2 (Spring Security):** A **PasswordEncoderFactories** create default types of password encoder based on predefined mapping
+- **Example-1 (E-commerce):** A **Payment Gateway Factory** that returns different payment methods dynamically.
+- **Example-2 (Spring Core):** Crearing beans dynamically through Factory Method (@Bean , XML-Based) 
+- **Example-3 (Spring Security):** A **PasswordEncoderFactories** create default types of password encoder based on predefined mapping
 
 ### 🔹 Abstract Factory
 - **Purpose:** Provides an interface for **creating families of related or dependent objects** without specifying their concrete classes.
@@ -27,8 +29,8 @@ These patterns focus on **object creation mechanisms**, aiming to improve flexib
 
 ### 🔹 Builder
 - **Purpose:** Separates the **construction of a complex object** from its representation.
-- **Example1 (E-commerce):** A **Product Builder** that customizes a product with different features.
-- **Example2 (Spring Security):** **HttpSecurity**, create security rules.
+- **Example-1 (E-commerce):** A **Product Builder** that customizes a product with different features.
+- **Example-2 (Spring Security):** **HttpSecurity**, create security rules.
 
 
 ### 🔹 Prototype
@@ -50,8 +52,8 @@ These patterns focus on **class composition** and the structure of relationships
 
 ### 🔹 Composite
 - **Purpose:** Creates a **hierarchical structure** where individual objects and compositions are treated uniformly(Tree stucture).  
-- **Example1 (E-commerce):** Organizing products into categories and subcategories—such as "Electronics > Smartphones > Accessories"—where each level behaves consistently.
-- **Example2 :** Organizing folders and files.
+- **Example-1 (E-commerce):** Organizing products into categories and subcategories—such as "Electronics > Smartphones > Accessories"—where each level behaves consistently.
+- **Example-2 :** Organize folders and files.
 
 ### 🔹 Decorator
 - **Purpose:** Allows us to **add new functionality** to an object without modifying its existing structure.
@@ -67,8 +69,9 @@ These patterns focus on **class composition** and the structure of relationships
     
 ### 🔹 Proxy
 - **Purpose:** Controls access to an object, adding security or caching mechanisms.  
-- **Example1 (E-commerce):** Restricting certain premium features, like advanced product recommendations, to logged-in users while providing basic suggestions to guests.
-- **Example2 (Spring Security):** **DelegatingFilterProxy**, act like bridge between the servlet container and spring's security filter chain.
+- **Example-1 (E-commerce):** Restricting certain premium features, like advanced product recommendations, to logged-in users while providing basic suggestions to guests.
+- **Example-2 (Spring AOP):** Used for method interception and aspect-oriented programming (JDK dynamic proxy: used when the bean implements the class, CGLIB: used when bean doesn't implement an interface).
+- **Example-3 (Spring Security):** **DelegatingFilterProxy**, act like bridge between the servlet container and spring's security filter chain.
   
 ---
 
@@ -77,8 +80,8 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Chain of Responsibility
 - **Purpose:** Passes a **request** through a chain of handlers until **one processes** it.
-- **Example1 (E-commerce):** **Order processing pipeline**, where different validation steps occur sequentially (payment, stock check, shipment).
-- **Example2 (Spring Security):** **SecurityFilerChain**
+- **Example-1 (E-commerce):** **Order processing pipeline**, where different validation steps occur sequentially (payment, stock check, shipment).
+- **Example-2 (Spring Security):** **SecurityFilerChain** maintains a **filter chain** where each filter has a specific responsibility.
 
 ### 🔹 Command
 - **Purpose:** Encapsulates a request as an object to allow undo/redo functionality.
@@ -103,7 +106,8 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Observer
 - **Purpose:** Allows multiple objects to be notified when a **state changes**.
-- **Example (E-commerce):** **Customers subscribing** to product updates.
+- **Example-1 (E-commerce):** **Customers subscribing** to product updates.
+- **Example-2 (Spring AOP):** **@EventListner** Spring event listeners notify components of changes.
  
 ### 🔹 State
 - **Purpose:** Allows an object to **change behavior** when its internal state changes (reduce if-conditions).
@@ -111,8 +115,8 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Strategy
 - **Purpose:** Defines a family of algorithms and allows **selecting one algorithm dynamically** at runtime.
-- **Example1 (E-commerce):** Choosing different **sorting algorithms** for product recommendations(Price-based, Size-based).
-- **Example2 (Spring Security):** **PasswordEncoder**
+- **Example-1 (E-commerce):** Choosing different **sorting algorithms** for product recommendations(Price-based, Size-based).
+- **Example-2 (Spring Security):** **PasswordEncoder**
 
 ### 🔹 Template Method
 - **Purpose:** Defines a **skeleton** of an algorithm and allows subclasses to **customize steps**.
