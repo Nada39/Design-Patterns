@@ -93,7 +93,7 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Iterator
 - **Purpose:** Traverse element of collection without know how it stored/structured
-- **Example:** Iterates on posts of Facebook -> Post class, PostIterator
+- **Example (E-commerce):** Iterates on posts of Facebook -> Post class, PostIterator
 
 ### 🔹 Mediator
 - **Purpose:** Centralizes and manages **communication between objects** to reduce dependencies.
@@ -102,7 +102,7 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Memento
 - **Purpose:** Captures and restores an object’s internal state without violating encapsulation.
-- **Example:** **Shopping cart recovery**, allowing users to restore their cart after accidental changes.
+- **Example (E-commerce):** **Shopping cart recovery**, allowing users to restore their cart after accidental changes.
 
 ### 🔹 Observer
 - **Purpose:** Allows multiple objects to be notified when a **state changes**.
@@ -120,7 +120,7 @@ These patterns **define interactions** between objects.
 
 ### 🔹 Template Method
 - **Purpose:** Defines a **skeleton** of an algorithm and allows subclasses to **customize steps**.
-- **Example:** Checkout process where different **payment methods** modify only specific parts of the workflow.
+- **Example (E-commerce):** Checkout process where different **payment methods** modify only specific parts of the workflow.
 
 ---
 
